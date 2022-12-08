@@ -6,10 +6,10 @@ services:
       - "10.104.1.10:7777:8096"
     container_name: jellyfin
     volumes:
-      - /path/to/config:/config
-      - /path/to/cache:/cache
-      - /path/to/media:/media
-      - /path/to/media2:/media2:ro
+      - /path/to/config:/mnt/config
+      - /path/to/cache:/mnt/cache
+      - /path/to/media:/mnt/media
+      - /path/to/media2:/mnt/media2:ro
     restart: 'unless-stopped'
     # Optional - alternative address used for autodiscovery
     environment:

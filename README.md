@@ -6,8 +6,8 @@ Use Jellyfin with a NFS for centralized medias, a reverse proxy and as many serv
 
 For all devices :
 
-Rocky2 OS installed and updated
-defined static IP on a same LAN
+- Rocky2 OS installed and updated
+- defined static IP on a same LAN
 
 ## NFS SERVER
 

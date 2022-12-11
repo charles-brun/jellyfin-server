@@ -6,11 +6,9 @@ services:
       - "10.104.1.10:7777:8096"
     container_name: jellyfin
     volumes:
-      - /path/to/config:/mnt/config
-      - /path/to/cache:/mnt/cache
-      - /path/to/media:/mnt/media
-      - /path/to/media2:/mnt/media2:ro
+      - /home/server/nfs/config:/config
+      - /home/server/nfs/cache:/cache
+      - /home/server/nfs/media:/media
+      - /home/server/nfs/media2:/media2:ro
     restart: 'unless-stopped'
-    # Optional - alternative address used for autodiscovery
-    environment:
-      - JELLYFIN_PublishedServerUrl=http://example.com
+
